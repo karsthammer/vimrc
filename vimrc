@@ -48,8 +48,8 @@ set smartcase   " ... unless they contain at least one capital letter
   " Ignore bundler and sass cache
   set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
 
-  " Ignore logs
-  set wildignore+=*/log/*
+  " Ignore logs & tmp
+  set wildignore+=*/tmp/*,*/log/*
 
   " Disable temp and backup files
   set wildignore+=*.swp,*~,._*
@@ -190,7 +190,7 @@ imap <D-/> <ESC><plug>NERDCommenterToggle<CR>i
 "" CTRL-P settings & mappings
 let g:ctrlp_map = ''
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\log$\|\.git$\|\.hg$\|\.svn$',
+  \ 'dir':  '\tmp\.$\|\log$\|\.git$\|\.hg$\|\.svn$',
   \ 'file': '\.pyc$\|\.pyo$\|\.rbc$|\.rbo$\|\.class$\|\.o$\|\~$\',
   \ }
 
