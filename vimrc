@@ -17,10 +17,10 @@ filetype plugin indent on
 set background=dark
 
 " Solarized options
-let g:solarized_hitrail=1
-let g:solarized_menu=0
+let g:solarized_hitrail=1 " Highlight trailing spaces
+let g:solarized_menu=0 " Don't display the solarized menu
 if !has("gui_running")
-  let g:solarized_termtrans=2
+  let g:solarized_termtrans=2 " Force black background in terminal
 endif
 colorscheme solarized
 set list
