@@ -18,7 +18,6 @@ set background=dark
 colorscheme solarized
 set list
 set listchars=tab:▸\ ,eol:¬
-let g:solarized_visibility="normal"
 
 "" Tab settings
 set nowrap
@@ -172,13 +171,9 @@ if has("statusline") && !&cp
 endif
 
 "" Autosave on blur
-if has("autocmd")
-  if exists("g:autosave_on_blur")
-    au FocusLost * silent! wall
-  endif
-endif
+au FocusLost * silent! wall
 
-"" TODO: NERDCommenter mappings
+"" NERDCommenter mappings
 map <D-/> <plug>NERDCommenterToggle<CR>
 imap <D-/> <ESC><plug>NERDCommenterToggle<CR>i
 
