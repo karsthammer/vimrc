@@ -15,6 +15,13 @@ endif
 syntax on
 filetype plugin indent on
 set background=dark
+
+" Solarized options
+let g:solarized_hitrail=1
+let g:solarized_menu=0
+if !has("gui_running")
+  let g:solarized_termtrans=2
+endif
 colorscheme solarized
 set list
 set listchars=tab:▸\ ,eol:¬
