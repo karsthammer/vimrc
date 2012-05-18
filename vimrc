@@ -175,6 +175,9 @@ if has("statusline") && !&cp
   set statusline+=Col:%v
   set statusline+=Buf:#%n
   set statusline+=[%b][0x%B]
+  set statusline+=%#warningmsg#
+  set statusline+=%{SyntasticStatuslineFlag()}
+  set statusline+=%*
 endif
 
 "" Autosave on blur
@@ -201,3 +204,8 @@ imap <D-t> <ESC>:CtrlP<CR>
 
 "" ACK mappings
 map <D-F> :Ack<space>
+
+"" Syntastic
+let g:syntastic_enable_signs=1
+let g:syntastic_quiet_warnings=0
+let g:syntastic_auto_loc_list=2
