@@ -11,6 +11,9 @@ if exists("g:enable_mvim_shift_arrow")
   let macvim_hig_shift_movement = 1 " mvim shift-arrow-keys
 endif
 
+set backupdir=~/.vim/backup/
+set directory=~/.vim/backup/
+
 "" Enable syntax highlighting
 syntax on
 filetype plugin indent on
@@ -209,3 +212,4 @@ map <D-F> :Ack<space>
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=0
 let g:syntastic_auto_loc_list=2
+let g:syntastic_ruby_exec='~/.rvm/rubies/ruby-1.9.3-p194/bin/ruby'
