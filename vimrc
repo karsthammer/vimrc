@@ -162,6 +162,8 @@ endif
 
 "" GUI settings
 if has("gui_running")
+  set clipboard=unnamed " use os x clipboard for yanking
+
   if has("autocmd")
     " Automatically resize splits when resizing MacVim window
     autocmd VimResized * wincmd =
