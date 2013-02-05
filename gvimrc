@@ -9,4 +9,9 @@ if has("gui_macvim")
   set guioptions-=T
 
   set guifont=Monaco:h12.00
+
+  macm File.Close key=<nop>
+  nnoremap <silent> <D-w> :bd<CR>
+  inoremap <silent> <D-w> <Esc>:bd<CR>
+  vnoremap <silent> <D-w> <Esc>:bd<CR>
 endif

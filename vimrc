@@ -23,7 +23,7 @@ set background=dark
 let g:solarized_hitrail=1 " Highlight trailing spaces
 let g:solarized_menu=0 " Don't display the solarized menu
 if !has("gui_running")
-  let g:solarized_termtrans=2 " Force black background in terminal
+  " let g:solarized_termtrans=2 " Force black background in terminal
 endif
 colorscheme solarized
 set list
@@ -162,7 +162,7 @@ endif
 
 "" GUI settings
 if has("gui_running")
-  set clipboard=unnamed " use os x clipboard for yanking
+  " set clipboard=unnamed " use os x clipboard for yanking
 
   if has("autocmd")
     " Automatically resize splits when resizing MacVim window
@@ -214,4 +214,4 @@ map <D-F> :Ack<space>
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=0
 let g:syntastic_auto_loc_list=2
-let g:syntastic_ruby_exec='~/.rvm/rubies/ruby-1.9.3-p194/bin/ruby'
+let g:syntastic_ruby_exec='/Users/khammer/.rvm/rubies/ruby-1.9.3-p194/bin/ruby'
