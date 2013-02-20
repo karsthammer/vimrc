@@ -214,4 +214,4 @@ map <D-F> :Ack<space>
 let g:syntastic_enable_signs=1
 let g:syntastic_quiet_warnings=0
 let g:syntastic_auto_loc_list=2
-let g:syntastic_ruby_exec='/Users/khammer/.rvm/rubies/ruby-1.9.3-p194/bin/ruby'
+let g:syntastic_ruby_exec='/Users/khammer/.rvm/rubies/ruby-1.9.3-p374/bin/ruby'
