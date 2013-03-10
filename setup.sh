@@ -10,6 +10,5 @@ git submodule update
 echo "Installing bundles"
 vim -s .bundle_install 2>/dev/null
 
+cd - > /dev/null
 echo "Finished setting up vim"
-
-cd -
