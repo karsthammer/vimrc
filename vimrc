@@ -27,6 +27,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-endwise'
 
 " Colorscheme settings
 set background=dark
