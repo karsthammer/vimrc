@@ -2,12 +2,10 @@
 
 ## Setup
 
-* Clone repository
-* git submodule init
-* git submodule update
-* vim -c BundleInstall
+* Clone repository to ~/.vim
+* Run ~/.vim/setup.sh
 
 <pre>
 git clone -b tryout https://github.com/karsthammer/vimrc.git ~/.vim
-cd ~/.vim && git submodule init && git submodule update && vim -c BundleInstall
+~/.vim/setup.sh
 </pre>
