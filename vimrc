@@ -2,9 +2,15 @@
 let mapleader = " "
 
 set nocompatible
-set nobackup
-set nowritebackup
-set noswapfile
+set backspace=indent,eol,start  " Makes backspace key more powerful.
+set noerrorbells    " No beeps
+set nobackup        " No backups
+set nowritebackup   "
+set noswapfile      " No swapfile
+set splitright      " Split vertical windows right to the current windows
+set splitbelow      " Split horizontal windows below to the current windows
+set encoding=utf-8  " Set default encoding to UTF-8
+set autoread        " Automatically reread changed files without asking me anything
 set history=50
 set ruler
 set showcmd
