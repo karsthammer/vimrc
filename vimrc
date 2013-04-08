@@ -20,6 +20,8 @@ set ignorecase
 set smartcase
 set laststatus=2
 set nowrap
+set smarttab
+set smartindent
 
 " Setup Vundle
 filetype off
@@ -34,6 +36,8 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'kien/ctrlp.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-endwise'
+Bundle 'ervandew/supertab'
+Bundle 'xolox/vim-easytags'
 
 " Colorscheme settings
 set background=dark
@@ -67,7 +71,22 @@ nnoremap <Right> :echoe "Use l"<CR>
 nnoremap <Up> :echoe "Use k"<CR>
 nnoremap <Down> :echoe "Use j"<CR>
 
+" Bubble single lines
+nmap <C-Up> [e
+nmap <C-Down> ]e
+nmap <C-k> [e
+nmap <C-j> ]e
+
+" Bubble multiple lines
+vmap <C-Up> [egv
+vmap <C-Down> ]egv
+vmap <C-k> [egv
+vmap <C-j> ]egv
+
+set tags=./tags;
+let g:easytags_dynamic_files = 2
+
 " Local config
-if filereadable(".vimrc.local")
-  source .vimrc.local
+if filereadable(glob("~/.vimrc.local"))
+  source ~/.vimrc.local
 endif
